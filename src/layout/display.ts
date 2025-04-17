@@ -7,7 +7,6 @@ export const inline = display("inline");
 export const block = display("block");
 export const inline_block = display("inline-block");
 export const flow_root = display("flow-root");
-export const flex = display("flex");
 export const inline_flex = display("inline-flex");
 export const grid = display("grid");
 export const inline_grid = display("inline-grid");
