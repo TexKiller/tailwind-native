@@ -44,3 +44,7 @@ export * from "./flexbox-and-grid/align-self";
 export * from "./flexbox-and-grid/place-content";
 export * from "./flexbox-and-grid/place-items";
 export * from "./flexbox-and-grid/place-self";
+
+// spacing
+export * from "./spacing/padding";
+export * from "./spacing/margin";
