@@ -48,3 +48,11 @@ export * from "./flexbox-and-grid/place-self";
 // spacing
 export * from "./spacing/padding";
 export * from "./spacing/margin";
+
+// sizing
+export * from "./sizing/width";
+export * from "./sizing/min-width";
+export * from "./sizing/max-width";
+export * from "./sizing/height";
+export * from "./sizing/min-height";
+export * from "./sizing/max-height";
