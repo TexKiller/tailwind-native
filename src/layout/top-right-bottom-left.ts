@@ -3,8 +3,8 @@ import { css } from "css-native";
 const parseInset = (value: string) =>
   value.includes("/")
     ? `calc(${value} * 100%)`
-    : (/^(0|[1-9]\d*)(\.\d*)?$/.test(value) &&
-        `calc(var(--spacing, 1) * ${value})`) ||
+    : (/^-?(0|[1-9]\d*)(\.\d*)?$/.test(value) &&
+        `calc(var(--spacing) * ${value})`) ||
       value;
 export const inset = (value: string) => css`
   inset: ${parseInset(value)};

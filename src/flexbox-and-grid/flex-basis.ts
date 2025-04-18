@@ -3,8 +3,8 @@ import { css } from "css-native";
 const parseBasis = (value: string) =>
   value.includes("/")
     ? `calc(${value} * 100%)`
-    : (/^(0|[1-9]\d*)(\.\d*)?$/.test(value) &&
-        `calc(var(--spacing, 1) * ${value})`) ||
+    : (/^-?(0|[1-9]\d*)(\.\d*)?$/.test(value) &&
+        `calc(var(--spacing) * ${value})`) ||
       value;
 export const basis = (value: string) => css`
   flex-basis: ${parseBasis(value)};

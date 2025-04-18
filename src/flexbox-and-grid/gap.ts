@@ -1,7 +1,7 @@
 import { css } from "css-native";
 
 const parseGap = (value: string) =>
-  /(0|[1-9]\d*)(\.\d*)?$/.test(value)
+  /^-?(0|[1-9]\d*)(\.\d*)?$/.test(value)
     ? `calc(var(--spacing) * ${value})`
     : value;
 export const gap = (value: string) => css`
