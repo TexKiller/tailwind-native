@@ -12,7 +12,7 @@
     "npmp": "np"
   },
   "dependencies": {
-    "css-native": "~1.0.3"
+    "css-native": "~1.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
