@@ -100,3 +100,13 @@ export const decoration = (value: string) =>
   /^-?(0|[1-9]\d*)(\.\d*)?$/.test(value)
     ? decoration_thickness(value)
     : decoration_color(value);
+
+// backgrounds
+export * from "./backgrounds/background-attachment";
+export * from "./backgrounds/background-clip";
+export * from "./backgrounds/background-color";
+export * from "./backgrounds/background-image";
+export * from "./backgrounds/background-origin";
+export * from "./backgrounds/background-position";
+export * from "./backgrounds/background-repeat";
+export * from "./backgrounds/background-size";
