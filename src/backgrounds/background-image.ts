@@ -31,7 +31,7 @@ export const bg_linear_to_tl = backgroundImage(
 export const bg_linear = (value: string) =>
   backgroundImage(
     `linear-gradient(${
-      /-?(0|[1-9]\d*)?(.\d*)?$/.test(value)
+      /^-?(0|[1-9]\d*)?(.\d*)?$/.test(value)
         ? value + " in oklab, var(--tw-gradient-stops)"
         : "var(--tw-gradient-stops, " + value + ")"
     })`,
@@ -46,12 +46,12 @@ export const bg_radial = (value: string) =>
   );
 export const bg_conic = (value: string) =>
   backgroundImage(
-    /-?(0|[1-9]\d*)?(.\d*)?$/.test(value)
+    /^-?(0|[1-9]\d*)?(.\d*)?$/.test(value)
       ? `conic-gradient(from ${value} in oklab, var(--tw-gradient-stops)`
       : value,
   );
 export const from = (value: string) =>
-  /-?(0|[1-9]\d*)?(.\d*)?%$/.test(value)
+  /^-?(0|[1-9]\d*)?(.\d*)?%$/.test(value)
     ? css`
         --tw-gradient-from-position: ${value};
       `
@@ -59,7 +59,7 @@ export const from = (value: string) =>
         --tw-gradient-from: ${value};
       `;
 export const via = (value: string) =>
-  /-?(0|[1-9]\d*)?(.\d*)?%$/.test(value)
+  /^-?(0|[1-9]\d*)?(.\d*)?%$/.test(value)
     ? css`
         --tw-gradient-via-position: ${value};
       `
@@ -67,7 +67,7 @@ export const via = (value: string) =>
         --tw-gradient-via: ${value};
       `;
 export const to = (value: string) =>
-  /-?(0|[1-9]\d*)?(.\d*)?%$/.test(value)
+  /^-?(0|[1-9]\d*)?(.\d*)?%$/.test(value)
     ? css`
         --tw-gradient-to-position: ${value};
       `

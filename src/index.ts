@@ -110,3 +110,27 @@ export * from "./backgrounds/background-origin";
 export * from "./backgrounds/background-position";
 export * from "./backgrounds/background-repeat";
 export * from "./backgrounds/background-size";
+
+// borders
+export * from "./borders/border-color";
+export * from "./borders/border-style";
+export * from "./borders/border-width";
+export * from "./borders/border-radius";
+export * from "./borders/outline-width";
+export * from "./borders/outline-color";
+export * from "./borders/outline-style";
+export * from "./borders/outline-offset";
+
+import { border_width } from "./borders/border-width";
+import { border_color } from "./borders/border-color";
+export const border = (value: string) =>
+  /^-?(0|[1-9]\d*)(\.\d*)?$/.test(value)
+    ? border_width(value)
+    : border_color(value);
+
+import { outline_width } from "./borders/outline-width";
+import { outline_color } from "./borders/outline-color";
+export const outline = (value: string) =>
+  /^-?(0|[1-9]\d*)(\.\d*)?$/.test(value)
+    ? outline_width(value)
+    : outline_color(value);
