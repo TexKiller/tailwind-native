@@ -1,3 +1,5 @@
+// theme
+export * from "./theme";
 // layout
 export * from "./layout/aspect-ratio";
 export * from "./layout/columns";
