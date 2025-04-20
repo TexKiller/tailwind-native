@@ -134,3 +134,19 @@ export const outline = (value: string) =>
   /^-?(0|[1-9]\d*)(\.\d*)?$/.test(value)
     ? outline_width(value)
     : outline_color(value);
+
+// effects
+export * from "./effects/box-shadow";
+export * from "./effects/text-shadow";
+export * from "./effects/opacity";
+export * from "./effects/mix-blend-mode";
+export * from "./effects/background-blend-mode";
+export * from "./effects/mask-clip";
+export * from "./effects/mask-composite";
+export * from "./effects/mask-image";
+export * from "./effects/mask-mode";
+export * from "./effects/mask-origin";
+export * from "./effects/mask-position";
+export * from "./effects/mask-repeat";
+export * from "./effects/mask-size";
+export * from "./effects/mask-type";
