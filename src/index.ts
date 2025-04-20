@@ -162,3 +162,24 @@ export * from "./tables/caption-side";
 
 // transitions and animation
 // skipping for now
+
+// transforms
+export * from "./transforms/backface-visibility";
+export * from "./transforms/perspective";
+export * from "./transforms/perspective-origin";
+export * from "./transforms/rotate";
+export * from "./transforms/scale";
+export * from "./transforms/skew";
+export * from "./transforms/transform";
+export * from "./transforms/transform-origin";
+export * from "./transforms/transform-style";
+export * from "./transforms/translate";
+
+// interactivity
+// skipping for now
+
+// svg
+// skipping for now
+
+// accessibility
+// skipping for now
