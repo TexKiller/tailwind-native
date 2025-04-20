@@ -150,3 +150,15 @@ export * from "./effects/mask-position";
 export * from "./effects/mask-repeat";
 export * from "./effects/mask-size";
 export * from "./effects/mask-type";
+
+// filters
+// skipping for now
+
+// tables
+export * from "./tables/border-collapse";
+export * from "./tables/border-spacing";
+export * from "./tables/table-layout";
+export * from "./tables/caption-side";
+
+// transitions and animation
+// skipping for now
