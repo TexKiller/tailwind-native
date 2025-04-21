@@ -12,7 +12,7 @@ export const rounded_2xl = rounded("var(--rounded-2xl)");
 export const rounded_3xl = rounded("var(--rounded-3xl)");
 export const rounded_4xl = rounded("var(--rounded-4xl)");
 export const rounded_none = rounded("0");
-export const rounded_full = rounded("calc(infinity * 1px)");
+export const rounded_full = rounded("999999px)");
 export const rounded_s = (value: string) => css`
   border-start-start-radius: ${value};
   border-end-start-radius: ${value};
@@ -26,7 +26,7 @@ export const rounded_s_2xl = rounded_s("var(--rounded-2xl)");
 export const rounded_s_3xl = rounded_s("var(--rounded-3xl)");
 export const rounded_s_4xl = rounded_s("var(--rounded-4xl)");
 export const rounded_s_none = rounded_s("0");
-export const rounded_s_full = rounded_s("calc(infinity * 1px)");
+export const rounded_s_full = rounded_s("999999px");
 export const rounded_e = (value: string) => css`
   border-start-end-radius: ${value};
   border-end-end-radius: ${value};
@@ -40,7 +40,7 @@ export const rounded_e_2xl = rounded_e("var(--rounded-2xl)");
 export const rounded_e_3xl = rounded_e("var(--rounded-3xl)");
 export const rounded_e_4xl = rounded_e("var(--rounded-4xl)");
 export const rounded_e_none = rounded_e("0");
-export const rounded_e_full = rounded_e("calc(infinity * 1px)");
+export const rounded_e_full = rounded_e("999999px");
 export const rounded_t = (value: string) => css`
   border-top-left-radius: ${value};
   border-top-right-radius: ${value};
@@ -54,7 +54,7 @@ export const rounded_t_2xl = rounded_t("var(--rounded-2xl)");
 export const rounded_t_3xl = rounded_t("var(--rounded-3xl)");
 export const rounded_t_4xl = rounded_t("var(--rounded-4xl)");
 export const rounded_t_none = rounded_t("0");
-export const rounded_t_full = rounded_t("calc(infinity * 1px)");
+export const rounded_t_full = rounded_t("999999px");
 export const rounded_r = (value: string) => css`
   border-top-right-radius: ${value};
   border-bottom-right-radius: ${value};
@@ -68,7 +68,7 @@ export const rounded_r_2xl = rounded_r("var(--rounded-2xl)");
 export const rounded_r_3xl = rounded_r("var(--rounded-3xl)");
 export const rounded_r_4xl = rounded_r("var(--rounded-4xl)");
 export const rounded_r_none = rounded_r("0");
-export const rounded_r_full = rounded_r("calc(infinity * 1px)");
+export const rounded_r_full = rounded_r("999999px");
 export const rounded_b = (value: string) => css`
   border-bottom-left-radius: ${value};
   border-bottom-right-radius: ${value};
@@ -82,7 +82,7 @@ export const rounded_b_2xl = rounded_b("var(--rounded-2xl)");
 export const rounded_b_3xl = rounded_b("var(--rounded-3xl)");
 export const rounded_b_4xl = rounded_b("var(--rounded-4xl)");
 export const rounded_b_none = rounded_b("0");
-export const rounded_b_full = rounded_b("calc(infinity * 1px)");
+export const rounded_b_full = rounded_b("999999px");
 export const rounded_l = (value: string) => css`
   border-top-left-radius: ${value};
   border-bottom-left-radius: ${value};
@@ -96,7 +96,7 @@ export const rounded_l_2xl = rounded_l("var(--rounded-2xl)");
 export const rounded_l_3xl = rounded_l("var(--rounded-3xl)");
 export const rounded_l_4xl = rounded_l("var(--rounded-4xl)");
 export const rounded_l_none = rounded_l("0");
-export const rounded_l_full = rounded_l("calc(infinity * 1px)");
+export const rounded_l_full = rounded_l("999999px");
 export const rounded_ss = (value: string) => css`
   border-start-start-radius: ${value};
 `;
@@ -109,7 +109,7 @@ export const rounded_ss_2xl = rounded_ss("var(--rounded-2xl)");
 export const rounded_ss_3xl = rounded_ss("var(--rounded-3xl)");
 export const rounded_ss_4xl = rounded_ss("var(--rounded-4xl)");
 export const rounded_ss_none = rounded_ss("0");
-export const rounded_ss_full = rounded_ss("calc(infinity * 1px)");
+export const rounded_ss_full = rounded_ss("999999px");
 export const rounded_se = (value: string) => css`
   border-start-end-radius: ${value};
 `;
@@ -122,7 +122,7 @@ export const rounded_se_2xl = rounded_se("var(--rounded-2xl)");
 export const rounded_se_3xl = rounded_se("var(--rounded-3xl)");
 export const rounded_se_4xl = rounded_se("var(--rounded-4xl)");
 export const rounded_se_none = rounded_se("0");
-export const rounded_se_full = rounded_se("calc(infinity * 1px)");
+export const rounded_se_full = rounded_se("999999px");
 export const rounded_ee = (value: string) => css`
   border-end-end-radius: ${value};
 `;
@@ -135,7 +135,7 @@ export const rounded_ee_2xl = rounded_ee("var(--rounded-2xl)");
 export const rounded_ee_3xl = rounded_ee("var(--rounded-3xl)");
 export const rounded_ee_4xl = rounded_ee("var(--rounded-4xl)");
 export const rounded_ee_none = rounded_ee("0");
-export const rounded_ee_full = rounded_ee("calc(infinity * 1px)");
+export const rounded_ee_full = rounded_ee("999999px");
 export const rounded_es = (value: string) => css`
   border-end-start-radius: ${value};
 `;
@@ -148,7 +148,7 @@ export const rounded_es_2xl = rounded_es("var(--rounded-2xl)");
 export const rounded_es_3xl = rounded_es("var(--rounded-3xl)");
 export const rounded_es_4xl = rounded_es("var(--rounded-4xl)");
 export const rounded_es_none = rounded_es("0");
-export const rounded_es_full = rounded_es("calc(infinity * 1px)");
+export const rounded_es_full = rounded_es("999999px");
 export const rounded_tl = (value: string) => css`
   border-top-left-radius: ${value};
 `;
@@ -161,7 +161,7 @@ export const rounded_tl_2xl = rounded_tl("var(--rounded-2xl)");
 export const rounded_tl_3xl = rounded_tl("var(--rounded-3xl)");
 export const rounded_tl_4xl = rounded_tl("var(--rounded-4xl)");
 export const rounded_tl_none = rounded_tl("0");
-export const rounded_tl_full = rounded_tl("calc(infinity * 1px)");
+export const rounded_tl_full = rounded_tl("999999px");
 export const rounded_tr = (value: string) => css`
   border-top-right-radius: ${value};
 `;
@@ -174,7 +174,7 @@ export const rounded_tr_2xl = rounded_tr("var(--rounded-2xl)");
 export const rounded_tr_3xl = rounded_tr("var(--rounded-3xl)");
 export const rounded_tr_4xl = rounded_tr("var(--rounded-4xl)");
 export const rounded_tr_none = rounded_tr("0");
-export const rounded_tr_full = rounded_tr("calc(infinity * 1px)");
+export const rounded_tr_full = rounded_tr("999999px");
 export const rounded_br = (value: string) => css`
   border-bottom-right-radius: ${value};
 `;
@@ -187,7 +187,7 @@ export const rounded_br_2xl = rounded_br("var(--rounded-2xl)");
 export const rounded_br_3xl = rounded_br("var(--rounded-3xl)");
 export const rounded_br_4xl = rounded_br("var(--rounded-4xl)");
 export const rounded_br_none = rounded_br("0");
-export const rounded_br_full = rounded_br("calc(infinity * 1px)");
+export const rounded_br_full = rounded_br("999999px");
 export const rounded_bl = (value: string) => css`
   border-bottom-left-radius: ${value};
 `;
@@ -200,4 +200,4 @@ export const rounded_bl_2xl = rounded_bl("var(--rounded-2xl)");
 export const rounded_bl_3xl = rounded_bl("var(--rounded-3xl)");
 export const rounded_bl_4xl = rounded_bl("var(--rounded-4xl)");
 export const rounded_bl_none = rounded_bl("0");
-export const rounded_bl_full = rounded_bl("calc(infinity * 1px)");
+export const rounded_bl_full = rounded_bl("999999px");
