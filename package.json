@@ -11,7 +11,7 @@
     "test": "node tests/run.js"
   },
   "dependencies": {
-    "css-native": "~1.0.6"
+    "css-native": "~1.0.9"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
@@ -34,6 +34,7 @@
   },
   "peerDependencies": {
     "@babel/core": "^7.0.0-0",
+    "css-native": "~1.0.9",
     "react": "*",
     "react-native": "*"
   },
