@@ -12,7 +12,7 @@ export const rounded_2xl = rounded("var(--rounded-2xl)");
 export const rounded_3xl = rounded("var(--rounded-3xl)");
 export const rounded_4xl = rounded("var(--rounded-4xl)");
 export const rounded_none = rounded("0");
-export const rounded_full = rounded("999999px)");
+export const rounded_full = rounded("999999px");
 export const rounded_s = (value: string) => css`
   border-start-start-radius: ${value};
   border-end-start-radius: ${value};
