@@ -125,10 +125,10 @@ export * from "./borders/outline-offset";
 
 import { border_width } from "./borders/border-width";
 import { border_color } from "./borders/border-color";
-export const border = (value: string) =>
-  /^-?(0|[1-9]\d*)(\.\d*)?$/.test(value)
-    ? border_width(value)
-    : border_color(value);
+export const border = (value?: string) =>
+  /^-?(0|[1-9]\d*)(\.\d*)?$/.test(value || "1")
+    ? border_width(value || "1")
+    : border_color(value!);
 
 import { outline_width } from "./borders/outline-width";
 import { outline_color } from "./borders/outline-color";
