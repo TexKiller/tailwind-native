@@ -185,3 +185,18 @@ export * from "./transforms/translate";
 
 // accessibility
 // skipping for now
+
+// pseudo-classes
+export * from "./pseudo-classes";
+
+// pseudo-elements
+// skipping for now
+
+// media queries
+export * from "./media-queries";
+
+// attribute selectors
+// skipping for now
+
+// child selectors
+// skipping for now
