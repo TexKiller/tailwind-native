@@ -10,6 +10,15 @@ const ThemeProvider = ({
   style?: any;
 }) => {
   if (Platform.OS === "web") {
+    style = [
+      ...(style instanceof Array
+        ? (style.length && style) || [{}]
+        : [style || {}]),
+    ];
+    style[0] = {
+      ...style[0],
+      minHeight: style[0].minHeight ?? "100%",
+    };
     return <View style={style}>{children}</View>;
   }
   return children;
@@ -435,7 +444,4 @@ export const Theme = styled(ThemeProvider)`
   // skip transitions and animations for now
 
   // skip filters for now
-
-  // set min-height to 100% for web
-  min-height: 100%;
 `;
