@@ -3083,9 +3083,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-native@npm:~1.0.9":
-  version: 1.0.9
-  resolution: "css-native@npm:1.0.9"
+"css-native@npm:~1.0.49":
+  version: 1.0.49
+  resolution: "css-native@npm:1.0.49"
   dependencies:
     react-native-fast-shadow: "npm:~0.1.1"
     react-native-reanimated: "npm:3.15.1"
@@ -3094,7 +3094,7 @@ __metadata:
     "@babel/core": ^7.0.0-0
     react: "*"
     react-native: "*"
-  checksum: 10/927ef605dc290216d4b5f0bc0d0873b9fd25c31e419c131cf8c5ba2f0e9dc16262d4aeba659a59a856d91c746e488c2844bac55b98e69d433e16884c596ba437
+  checksum: 10/4cd52a68aa45a220726a42f32949210784061728c1a7dc5ed9d37498bdf20cc2f28ece1895db96c122efbedfa9ee83bcac15eb71c263a8fd4faa50eb730c6616
   languageName: node
   linkType: hard
 
@@ -8893,7 +8893,7 @@ __metadata:
     "@types/jest": "npm:^29.0.0"
     "@types/react": "npm:*"
     chokidar: "npm:^3.5.3"
-    css-native: "npm:~1.0.9"
+    css-native: "npm:~1.0.49"
     dotenv: "npm:^16.4.5"
     eslint: "npm:^8.21.0"
     jest: "npm:29.7.0"
@@ -8908,7 +8908,7 @@ __metadata:
     typescript-eslint: "npm:^8.29.1"
   peerDependencies:
     "@babel/core": ^7.0.0-0
-    css-native: ~1.0.9
+    css-native: ~1.0.49
     react: "*"
     react-native: "*"
   languageName: unknown
