@@ -1,11 +1,19 @@
 import styled from "css-native";
+import React from "react";
+import { Platform, View } from "react-native";
 
 const ThemeProvider = ({
   children,
+  style,
 }: {
   children: React.ReactNode;
   style?: any;
-}) => children;
+}) => {
+  if (Platform.OS === "web") {
+    return <View style={style}>{children}</View>;
+  }
+  return children;
+};
 
 export const Theme = styled(ThemeProvider)`
   --font-sans:
