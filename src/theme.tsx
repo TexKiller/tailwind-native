@@ -435,4 +435,7 @@ export const Theme = styled(ThemeProvider)`
   // skip transitions and animations for now
 
   // skip filters for now
+
+  // set min-height to 100% for web
+  min-height: 100%;
 `;
