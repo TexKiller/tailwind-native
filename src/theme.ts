@@ -1,6 +1,13 @@
 import styled from "css-native";
 
-export const Theme = styled.View`
+const ThemeProvider = ({
+  children,
+}: {
+  children: React.ReactNode;
+  style?: any;
+}) => children;
+
+export const Theme = styled(ThemeProvider)`
   --font-sans:
     ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
