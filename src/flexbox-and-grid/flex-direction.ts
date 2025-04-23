@@ -5,5 +5,5 @@ const flexDirection = (value: string) => css`
 `;
 export const flex_row = flexDirection(`row`);
 export const flex_row_reverse = flexDirection(`row-reverse`);
-export const flex_column = flexDirection(`column`);
-export const flex_column_reverse = flexDirection(`column-reverse`);
+export const flex_col = flexDirection(`column`);
+export const flex_col_reverse = flexDirection(`column-reverse`);
