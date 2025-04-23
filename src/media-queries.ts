@@ -4,10 +4,11 @@ const mediaQuery =
   (constraint: string) =>
   (...styles: Parameters<typeof css>) => {
     const consolidated = css(...styles);
-    (consolidated as any)[0][0] =
-      `@media (${constraint}) {\n` + consolidated[0][0];
-    (consolidated as any)[0][consolidated[0].length - 1] =
-      consolidated[0][consolidated[0].length - 1] + "\n}";
+    (consolidated as any)[0] = [
+      `@media (${constraint}) {\n` + consolidated[0][0],
+      ...consolidated[0].slice(1, consolidated[0].length - 1),
+      consolidated[0][consolidated[0].length - 1] + "\n}",
+    ];
     return consolidated;
   };
 export const min = (constraint: string) =>
