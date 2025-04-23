@@ -11,7 +11,7 @@
     "test": "node tests/run.js"
   },
   "dependencies": {
-    "css-native": "~1.0.49"
+    "css-native": "~1.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
@@ -33,8 +33,7 @@
     "typescript-eslint": "^8.29.1"
   },
   "peerDependencies": {
-    "@babel/core": "^7.0.0-0",
-    "css-native": "~1.0.49",
+    "css-native": "~1.1.0",
     "react": "*",
     "react-native": "*"
   },
