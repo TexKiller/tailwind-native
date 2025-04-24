@@ -94,7 +94,11 @@ export * from "./typography/content";
 import { text_size } from "./typography/font-size";
 import { text_height } from "./typography/line-height";
 export const text = (size: string, line_height?: string) =>
-  line_height ? text_height(size, line_height) : text_size(size);
+  line_height
+    ? text_height(size, line_height)
+    : /^-?(0|[1-9]\d*)(\.\d*)?$/.test(size)
+      ? text_size(size)
+      : color(size);
 
 import { decoration_color } from "./typography/text-decoration-color";
 import { decoration_thickness } from "./typography/text-decoration-thickness";
@@ -132,6 +136,7 @@ export const border = (value?: string) =>
 
 import { outline_width } from "./borders/outline-width";
 import { outline_color } from "./borders/outline-color";
+import { color } from "./typography/color";
 export const outline = (value: string) =>
   /^-?(0|[1-9]\d*)(\.\d*)?$/.test(value)
     ? outline_width(value)
