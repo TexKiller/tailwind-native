@@ -1,5 +1,5 @@
 import { css } from "css-native";
 
-export const grow = (value?: string) => css`
-  flex-grow: ${value || 1};
+export const grow = (value?: TemplateStringsArray) => css`
+  flex-grow: ${value?.[0] || 1};
 `;

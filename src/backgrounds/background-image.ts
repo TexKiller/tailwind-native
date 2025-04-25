@@ -28,49 +28,49 @@ export const bg_linear_to_l = backgroundImage(
 export const bg_linear_to_tl = backgroundImage(
   "linear-gradient(to top left, var(--tw-gradient-stops))",
 );
-export const bg_linear = (value: string) =>
+export const bg_linear = (value: TemplateStringsArray) =>
   backgroundImage(
     `linear-gradient(${
-      /^-?(0|[1-9]\d*)?(.\d*)?$/.test(value)
-        ? value + " in oklab, var(--tw-gradient-stops)"
-        : "var(--tw-gradient-stops, " + value + ")"
+      /^-?(0|[1-9]\d*)?(.\d*)?$/.test(value[0])
+        ? value[0] + " in oklab, var(--tw-gradient-stops)"
+        : "var(--tw-gradient-stops, " + value[0] + ")"
     })`,
   );
-export const bg_radial = (value: string) =>
+export const bg_radial = (value?: TemplateStringsArray) =>
   backgroundImage(
     `radial-gradient(${
       value
-        ? "var(--tw-gradient-stops, " + value + ")"
+        ? "var(--tw-gradient-stops, " + value[0] + ")"
         : "in oklab, var(--tw-gradient-stops)"
     })`,
   );
-export const bg_conic = (value: string) =>
+export const bg_conic = (value: TemplateStringsArray) =>
   backgroundImage(
-    /^-?(0|[1-9]\d*)?(.\d*)?$/.test(value)
-      ? `conic-gradient(from ${value} in oklab, var(--tw-gradient-stops)`
-      : value,
+    /^-?(0|[1-9]\d*)?(.\d*)?$/.test(value[0])
+      ? `conic-gradient(from ${value[0]} in oklab, var(--tw-gradient-stops)`
+      : value[0],
   );
-export const from = (value: string) =>
-  /^-?(0|[1-9]\d*)?(.\d*)?%$/.test(value)
+export const from = (value: TemplateStringsArray) =>
+  /^-?(0|[1-9]\d*)?(.\d*)?%$/.test(value[0])
     ? css`
-        --tw-gradient-from-position: ${value};
+        --tw-gradient-from-position: ${value[0]};
       `
     : css`
-        --tw-gradient-from: ${value};
+        --tw-gradient-from: ${value[0]};
       `;
-export const via = (value: string) =>
-  /^-?(0|[1-9]\d*)?(.\d*)?%$/.test(value)
+export const via = (value: TemplateStringsArray) =>
+  /^-?(0|[1-9]\d*)?(.\d*)?%$/.test(value[0])
     ? css`
-        --tw-gradient-via-position: ${value};
+        --tw-gradient-via-position: ${value[0]};
       `
     : css`
-        --tw-gradient-via: ${value};
+        --tw-gradient-via: ${value[0]};
       `;
-export const to = (value: string) =>
-  /^-?(0|[1-9]\d*)?(.\d*)?%$/.test(value)
+export const to = (value: TemplateStringsArray) =>
+  /^-?(0|[1-9]\d*)?(.\d*)?%$/.test(value[0])
     ? css`
-        --tw-gradient-to-position: ${value};
+        --tw-gradient-to-position: ${value[0]};
       `
     : css`
-        --tw-gradient-to: ${value};
+        --tw-gradient-to: ${value[0]};
       `;

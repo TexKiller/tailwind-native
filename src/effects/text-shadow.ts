@@ -1,519 +1,263 @@
 import { css } from "css-native";
 
-export const text_shadow = (value: string) => css`
-  box-shadow: ${value};
+export const text_shadow = (value: TemplateStringsArray) => css`
+  box-shadow: ${value[0]};
 `;
-export const text_shadow_2xs = text_shadow("var(--shadow-2xs)");
-export const text_shadow_xs = text_shadow("var(--shadow-xs)");
-export const text_shadow_sm = text_shadow("var(--shadow-sm)");
-export const text_shadow_md = text_shadow("var(--shadow-md)");
-export const text_shadow_lg = text_shadow("var(--shadow-lg)");
-export const text_shadow_xl = text_shadow("var(--shadow-xl)");
-export const text_shadow_2xl = text_shadow("var(--shadow-2xl)");
-export const text_shadow_none = text_shadow("0 0 #0000");
-export const text_shadow_color = (value: string) => css`
-  --tw-shadow-color: ${value};
+export const text_shadow_2xs = text_shadow`var(--shadow-2xs)`;
+export const text_shadow_xs = text_shadow`var(--shadow-xs)`;
+export const text_shadow_sm = text_shadow`var(--shadow-sm)`;
+export const text_shadow_md = text_shadow`var(--shadow-md)`;
+export const text_shadow_lg = text_shadow`var(--shadow-lg)`;
+export const text_shadow_xl = text_shadow`var(--shadow-xl)`;
+export const text_shadow_2xl = text_shadow`var(--shadow-2xl)`;
+export const text_shadow_none = text_shadow`0 0 #0000`;
+export const text_shadow_color = (value: TemplateStringsArray) => css`
+  --tw-shadow-color: ${value[0]};
 `;
-export const text_shadow_inherit = text_shadow_color("inherit");
-export const text_shadow_current = text_shadow_color("currentColor");
-export const text_shadow_transparent = text_shadow_color("transparent");
-export const text_shadow_black = text_shadow_color("var(--color-black)");
-export const text_shadow_white = text_shadow_color("var(--color-white)");
-export const text_shadow_red_50 = text_shadow_color("var(--color-red-50)");
-export const text_shadow_red_100 = text_shadow_color("var(--color-red-100)");
-export const text_shadow_red_200 = text_shadow_color("var(--color-red-200)");
-export const text_shadow_red_300 = text_shadow_color("var(--color-red-300)");
-export const text_shadow_red_400 = text_shadow_color("var(--color-red-400)");
-export const text_shadow_red_500 = text_shadow_color("var(--color-red-500)");
-export const text_shadow_red_600 = text_shadow_color("var(--color-red-600)");
-export const text_shadow_red_700 = text_shadow_color("var(--color-red-700)");
-export const text_shadow_red_800 = text_shadow_color("var(--color-red-800)");
-export const text_shadow_red_900 = text_shadow_color("var(--color-red-900)");
-export const text_shadow_red_950 = text_shadow_color("var(--color-red-950)");
-export const text_shadow_orange_50 = text_shadow_color(
-  "var(--color-orange-50)",
-);
-export const text_shadow_orange_100 = text_shadow_color(
-  "var(--color-orange-100)",
-);
-export const text_shadow_orange_200 = text_shadow_color(
-  "var(--color-orange-200)",
-);
-export const text_shadow_orange_300 = text_shadow_color(
-  "var(--color-orange-300)",
-);
-export const text_shadow_orange_400 = text_shadow_color(
-  "var(--color-orange-400)",
-);
-export const text_shadow_orange_500 = text_shadow_color(
-  "var(--color-orange-500)",
-);
-export const text_shadow_orange_600 = text_shadow_color(
-  "var(--color-orange-600)",
-);
-export const text_shadow_orange_700 = text_shadow_color(
-  "var(--color-orange-700)",
-);
-export const text_shadow_orange_800 = text_shadow_color(
-  "var(--color-orange-800)",
-);
-export const text_shadow_orange_900 = text_shadow_color(
-  "var(--color-orange-900)",
-);
-export const text_shadow_orange_950 = text_shadow_color(
-  "var(--color-orange-950)",
-);
-export const text_shadow_amber_50 = text_shadow_color("var(--color-amber-50)");
-export const text_shadow_amber_100 = text_shadow_color(
-  "var(--color-amber-100)",
-);
-export const text_shadow_amber_200 = text_shadow_color(
-  "var(--color-amber-200)",
-);
-export const text_shadow_amber_300 = text_shadow_color(
-  "var(--color-amber-300)",
-);
-export const text_shadow_amber_400 = text_shadow_color(
-  "var(--color-amber-400)",
-);
-export const text_shadow_amber_500 = text_shadow_color(
-  "var(--color-amber-500)",
-);
-export const text_shadow_amber_600 = text_shadow_color(
-  "var(--color-amber-600)",
-);
-export const text_shadow_amber_700 = text_shadow_color(
-  "var(--color-amber-700)",
-);
-export const text_shadow_amber_800 = text_shadow_color(
-  "var(--color-amber-800)",
-);
-export const text_shadow_amber_900 = text_shadow_color(
-  "var(--color-amber-900)",
-);
-export const text_shadow_amber_950 = text_shadow_color(
-  "var(--color-amber-950)",
-);
-export const text_shadow_yellow_50 = text_shadow_color(
-  "var(--color-yellow-50)",
-);
-export const text_shadow_yellow_100 = text_shadow_color(
-  "var(--color-yellow-100)",
-);
-export const text_shadow_yellow_200 = text_shadow_color(
-  "var(--color-yellow-200)",
-);
-export const text_shadow_yellow_300 = text_shadow_color(
-  "var(--color-yellow-300)",
-);
-export const text_shadow_yellow_400 = text_shadow_color(
-  "var(--color-yellow-400)",
-);
-export const text_shadow_yellow_500 = text_shadow_color(
-  "var(--color-yellow-500)",
-);
-export const text_shadow_yellow_600 = text_shadow_color(
-  "var(--color-yellow-600)",
-);
-export const text_shadow_yellow_700 = text_shadow_color(
-  "var(--color-yellow-700)",
-);
-export const text_shadow_yellow_800 = text_shadow_color(
-  "var(--color-yellow-800)",
-);
-export const text_shadow_yellow_900 = text_shadow_color(
-  "var(--color-yellow-900)",
-);
-export const text_shadow_yellow_950 = text_shadow_color(
-  "var(--color-yellow-950)",
-);
-export const text_shadow_lime_50 = text_shadow_color("var(--color-lime-50)");
-export const text_shadow_lime_100 = text_shadow_color("var(--color-lime-100)");
-export const text_shadow_lime_200 = text_shadow_color("var(--color-lime-200)");
-export const text_shadow_lime_300 = text_shadow_color("var(--color-lime-300)");
-export const text_shadow_lime_400 = text_shadow_color("var(--color-lime-400)");
-export const text_shadow_lime_500 = text_shadow_color("var(--color-lime-500)");
-export const text_shadow_lime_600 = text_shadow_color("var(--color-lime-600)");
-export const text_shadow_lime_700 = text_shadow_color("var(--color-lime-700)");
-export const text_shadow_lime_800 = text_shadow_color("var(--color-lime-800)");
-export const text_shadow_lime_900 = text_shadow_color("var(--color-lime-900)");
-export const text_shadow_lime_950 = text_shadow_color("var(--color-lime-950)");
-export const text_shadow_green_50 = text_shadow_color("var(--color-green-50)");
-export const text_shadow_green_100 = text_shadow_color(
-  "var(--color-green-100)",
-);
-export const text_shadow_green_200 = text_shadow_color(
-  "var(--color-green-200)",
-);
-export const text_shadow_green_300 = text_shadow_color(
-  "var(--color-green-300)",
-);
-export const text_shadow_green_400 = text_shadow_color(
-  "var(--color-green-400)",
-);
-export const text_shadow_green_500 = text_shadow_color(
-  "var(--color-green-500)",
-);
-export const text_shadow_green_600 = text_shadow_color(
-  "var(--color-green-600)",
-);
-export const text_shadow_green_700 = text_shadow_color(
-  "var(--color-green-700)",
-);
-export const text_shadow_green_800 = text_shadow_color(
-  "var(--color-green-800)",
-);
-export const text_shadow_green_900 = text_shadow_color(
-  "var(--color-green-900)",
-);
-export const text_shadow_green_950 = text_shadow_color(
-  "var(--color-green-950)",
-);
-export const text_shadow_emerald_50 = text_shadow_color(
-  "var(--color-emerald-50)",
-);
-export const text_shadow_emerald_100 = text_shadow_color(
-  "var(--color-emerald-100)",
-);
-export const text_shadow_emerald_200 = text_shadow_color(
-  "var(--color-emerald-200)",
-);
-export const text_shadow_emerald_300 = text_shadow_color(
-  "var(--color-emerald-300)",
-);
-export const text_shadow_emerald_400 = text_shadow_color(
-  "var(--color-emerald-400)",
-);
-export const text_shadow_emerald_500 = text_shadow_color(
-  "var(--color-emerald-500)",
-);
-export const text_shadow_emerald_600 = text_shadow_color(
-  "var(--color-emerald-600)",
-);
-export const text_shadow_emerald_700 = text_shadow_color(
-  "var(--color-emerald-700)",
-);
-export const text_shadow_emerald_800 = text_shadow_color(
-  "var(--color-emerald-800)",
-);
-export const text_shadow_emerald_900 = text_shadow_color(
-  "var(--color-emerald-900)",
-);
-export const text_shadow_emerald_950 = text_shadow_color(
-  "var(--color-emerald-950)",
-);
-export const text_shadow_teal_50 = text_shadow_color("var(--color-teal-50)");
-export const text_shadow_teal_100 = text_shadow_color("var(--color-teal-100)");
-export const text_shadow_teal_200 = text_shadow_color("var(--color-teal-200)");
-export const text_shadow_teal_300 = text_shadow_color("var(--color-teal-300)");
-export const text_shadow_teal_400 = text_shadow_color("var(--color-teal-400)");
-export const text_shadow_teal_500 = text_shadow_color("var(--color-teal-500)");
-export const text_shadow_teal_600 = text_shadow_color("var(--color-teal-600)");
-export const text_shadow_teal_700 = text_shadow_color("var(--color-teal-700)");
-export const text_shadow_teal_800 = text_shadow_color("var(--color-teal-800)");
-export const text_shadow_teal_900 = text_shadow_color("var(--color-teal-900)");
-export const text_shadow_teal_950 = text_shadow_color("var(--color-teal-950)");
-export const text_shadow_cyan_50 = text_shadow_color("var(--color-cyan-50)");
-export const text_shadow_cyan_100 = text_shadow_color("var(--color-cyan-100)");
-export const text_shadow_cyan_200 = text_shadow_color("var(--color-cyan-200)");
-export const text_shadow_cyan_300 = text_shadow_color("var(--color-cyan-300)");
-export const text_shadow_cyan_400 = text_shadow_color("var(--color-cyan-400)");
-export const text_shadow_cyan_500 = text_shadow_color("var(--color-cyan-500)");
-export const text_shadow_cyan_600 = text_shadow_color("var(--color-cyan-600)");
-export const text_shadow_cyan_700 = text_shadow_color("var(--color-cyan-700)");
-export const text_shadow_cyan_800 = text_shadow_color("var(--color-cyan-800)");
-export const text_shadow_cyan_900 = text_shadow_color("var(--color-cyan-900)");
-export const text_shadow_cyan_950 = text_shadow_color("var(--color-cyan-950)");
-export const text_shadow_sky_50 = text_shadow_color("var(--color-sky-50)");
-export const text_shadow_sky_100 = text_shadow_color("var(--color-sky-100)");
-export const text_shadow_sky_200 = text_shadow_color("var(--color-sky-200)");
-export const text_shadow_sky_300 = text_shadow_color("var(--color-sky-300)");
-export const text_shadow_sky_400 = text_shadow_color("var(--color-sky-400)");
-export const text_shadow_sky_500 = text_shadow_color("var(--color-sky-500)");
-export const text_shadow_sky_600 = text_shadow_color("var(--color-sky-600)");
-export const text_shadow_sky_700 = text_shadow_color("var(--color-sky-700)");
-export const text_shadow_sky_800 = text_shadow_color("var(--color-sky-800)");
-export const text_shadow_sky_900 = text_shadow_color("var(--color-sky-900)");
-export const text_shadow_sky_950 = text_shadow_color("var(--color-sky-950)");
-export const text_shadow_blue_50 = text_shadow_color("var(--color-blue-50)");
-export const text_shadow_blue_100 = text_shadow_color("var(--color-blue-100)");
-export const text_shadow_blue_200 = text_shadow_color("var(--color-blue-200)");
-export const text_shadow_blue_300 = text_shadow_color("var(--color-blue-300)");
-export const text_shadow_blue_400 = text_shadow_color("var(--color-blue-400)");
-export const text_shadow_blue_500 = text_shadow_color("var(--color-blue-500)");
-export const text_shadow_blue_600 = text_shadow_color("var(--color-blue-600)");
-export const text_shadow_blue_700 = text_shadow_color("var(--color-blue-700)");
-export const text_shadow_blue_800 = text_shadow_color("var(--color-blue-800)");
-export const text_shadow_blue_900 = text_shadow_color("var(--color-blue-900)");
-export const text_shadow_blue_950 = text_shadow_color("var(--color-blue-950)");
-export const text_shadow_indigo_50 = text_shadow_color(
-  "var(--color-indigo-50)",
-);
-export const text_shadow_indigo_100 = text_shadow_color(
-  "var(--color-indigo-100)",
-);
-export const text_shadow_indigo_200 = text_shadow_color(
-  "var(--color-indigo-200)",
-);
-export const text_shadow_indigo_300 = text_shadow_color(
-  "var(--color-indigo-300)",
-);
-export const text_shadow_indigo_400 = text_shadow_color(
-  "var(--color-indigo-400)",
-);
-export const text_shadow_indigo_500 = text_shadow_color(
-  "var(--color-indigo-500)",
-);
-export const text_shadow_indigo_600 = text_shadow_color(
-  "var(--color-indigo-600)",
-);
-export const text_shadow_indigo_700 = text_shadow_color(
-  "var(--color-indigo-700)",
-);
-export const text_shadow_indigo_800 = text_shadow_color(
-  "var(--color-indigo-800)",
-);
-export const text_shadow_indigo_900 = text_shadow_color(
-  "var(--color-indigo-900)",
-);
-export const text_shadow_indigo_950 = text_shadow_color(
-  "var(--color-indigo-950)",
-);
-export const text_shadow_violet_50 = text_shadow_color(
-  "var(--color-violet-50)",
-);
-export const text_shadow_violet_100 = text_shadow_color(
-  "var(--color-violet-100)",
-);
-export const text_shadow_violet_200 = text_shadow_color(
-  "var(--color-violet-200)",
-);
-export const text_shadow_violet_300 = text_shadow_color(
-  "var(--color-violet-300)",
-);
-export const text_shadow_violet_400 = text_shadow_color(
-  "var(--color-violet-400)",
-);
-export const text_shadow_violet_500 = text_shadow_color(
-  "var(--color-violet-500)",
-);
-export const text_shadow_violet_600 = text_shadow_color(
-  "var(--color-violet-600)",
-);
-export const text_shadow_violet_700 = text_shadow_color(
-  "var(--color-violet-700)",
-);
-export const text_shadow_violet_800 = text_shadow_color(
-  "var(--color-violet-800)",
-);
-export const text_shadow_violet_900 = text_shadow_color(
-  "var(--color-violet-900)",
-);
-export const text_shadow_violet_950 = text_shadow_color(
-  "var(--color-violet-950)",
-);
-export const text_shadow_purple_50 = text_shadow_color(
-  "var(--color-purple-50)",
-);
-export const text_shadow_purple_100 = text_shadow_color(
-  "var(--color-purple-100)",
-);
-export const text_shadow_purple_200 = text_shadow_color(
-  "var(--color-purple-200)",
-);
-export const text_shadow_purple_300 = text_shadow_color(
-  "var(--color-purple-300)",
-);
-export const text_shadow_purple_400 = text_shadow_color(
-  "var(--color-purple-400)",
-);
-export const text_shadow_purple_500 = text_shadow_color(
-  "var(--color-purple-500)",
-);
-export const text_shadow_purple_600 = text_shadow_color(
-  "var(--color-purple-600)",
-);
-export const text_shadow_purple_700 = text_shadow_color(
-  "var(--color-purple-700)",
-);
-export const text_shadow_purple_800 = text_shadow_color(
-  "var(--color-purple-800)",
-);
-export const text_shadow_purple_900 = text_shadow_color(
-  "var(--color-purple-900)",
-);
-export const text_shadow_purple_950 = text_shadow_color(
-  "var(--color-purple-950)",
-);
-export const text_shadow_fuchsia_50 = text_shadow_color(
-  "var(--color-fuchsia-50)",
-);
-export const text_shadow_fuchsia_100 = text_shadow_color(
-  "var(--color-fuchsia-100)",
-);
-export const text_shadow_fuchsia_200 = text_shadow_color(
-  "var(--color-fuchsia-200)",
-);
-export const text_shadow_fuchsia_300 = text_shadow_color(
-  "var(--color-fuchsia-300)",
-);
-export const text_shadow_fuchsia_400 = text_shadow_color(
-  "var(--color-fuchsia-400)",
-);
-export const text_shadow_fuchsia_500 = text_shadow_color(
-  "var(--color-fuchsia-500)",
-);
-export const text_shadow_fuchsia_600 = text_shadow_color(
-  "var(--color-fuchsia-600)",
-);
-export const text_shadow_fuchsia_700 = text_shadow_color(
-  "var(--color-fuchsia-700)",
-);
-export const text_shadow_fuchsia_800 = text_shadow_color(
-  "var(--color-fuchsia-800)",
-);
-export const text_shadow_fuchsia_900 = text_shadow_color(
-  "var(--color-fuchsia-900)",
-);
-export const text_shadow_fuchsia_950 = text_shadow_color(
-  "var(--color-fuchsia-950)",
-);
-export const text_shadow_pink_50 = text_shadow_color("var(--color-pink-50)");
-export const text_shadow_pink_100 = text_shadow_color("var(--color-pink-100)");
-export const text_shadow_pink_200 = text_shadow_color("var(--color-pink-200)");
-export const text_shadow_pink_300 = text_shadow_color("var(--color-pink-300)");
-export const text_shadow_pink_400 = text_shadow_color("var(--color-pink-400)");
-export const text_shadow_pink_500 = text_shadow_color("var(--color-pink-500)");
-export const text_shadow_pink_600 = text_shadow_color("var(--color-pink-600)");
-export const text_shadow_pink_700 = text_shadow_color("var(--color-pink-700)");
-export const text_shadow_pink_800 = text_shadow_color("var(--color-pink-800)");
-export const text_shadow_pink_900 = text_shadow_color("var(--color-pink-900)");
-export const text_shadow_pink_950 = text_shadow_color("var(--color-pink-950)");
-export const text_shadow_rose_50 = text_shadow_color("var(--color-rose-50)");
-export const text_shadow_rose_100 = text_shadow_color("var(--color-rose-100)");
-export const text_shadow_rose_200 = text_shadow_color("var(--color-rose-200)");
-export const text_shadow_rose_300 = text_shadow_color("var(--color-rose-300)");
-export const text_shadow_rose_400 = text_shadow_color("var(--color-rose-400)");
-export const text_shadow_rose_500 = text_shadow_color("var(--color-rose-500)");
-export const text_shadow_rose_600 = text_shadow_color("var(--color-rose-600)");
-export const text_shadow_rose_700 = text_shadow_color("var(--color-rose-700)");
-export const text_shadow_rose_800 = text_shadow_color("var(--color-rose-800)");
-export const text_shadow_rose_900 = text_shadow_color("var(--color-rose-900)");
-export const text_shadow_rose_950 = text_shadow_color("var(--color-rose-950)");
-export const text_shadow_slate_50 = text_shadow_color("var(--color-slate-50)");
-export const text_shadow_slate_100 = text_shadow_color(
-  "var(--color-slate-100)",
-);
-export const text_shadow_slate_200 = text_shadow_color(
-  "var(--color-slate-200)",
-);
-export const text_shadow_slate_300 = text_shadow_color(
-  "var(--color-slate-300)",
-);
-export const text_shadow_slate_400 = text_shadow_color(
-  "var(--color-slate-400)",
-);
-export const text_shadow_slate_500 = text_shadow_color(
-  "var(--color-slate-500)",
-);
-export const text_shadow_slate_600 = text_shadow_color(
-  "var(--color-slate-600)",
-);
-export const text_shadow_slate_700 = text_shadow_color(
-  "var(--color-slate-700)",
-);
-export const text_shadow_slate_800 = text_shadow_color(
-  "var(--color-slate-800)",
-);
-export const text_shadow_slate_900 = text_shadow_color(
-  "var(--color-slate-900)",
-);
-export const text_shadow_slate_950 = text_shadow_color(
-  "var(--color-slate-950)",
-);
-export const text_shadow_gray_50 = text_shadow_color("var(--color-gray-50)");
-export const text_shadow_gray_100 = text_shadow_color("var(--color-gray-100)");
-export const text_shadow_gray_200 = text_shadow_color("var(--color-gray-200)");
-export const text_shadow_gray_300 = text_shadow_color("var(--color-gray-300)");
-export const text_shadow_gray_400 = text_shadow_color("var(--color-gray-400)");
-export const text_shadow_gray_500 = text_shadow_color("var(--color-gray-500)");
-export const text_shadow_gray_600 = text_shadow_color("var(--color-gray-600)");
-export const text_shadow_gray_700 = text_shadow_color("var(--color-gray-700)");
-export const text_shadow_gray_800 = text_shadow_color("var(--color-gray-800)");
-export const text_shadow_gray_900 = text_shadow_color("var(--color-gray-900)");
-export const text_shadow_gray_950 = text_shadow_color("var(--color-gray-950)");
-export const text_shadow_zinc_50 = text_shadow_color("var(--color-zinc-50)");
-export const text_shadow_zinc_100 = text_shadow_color("var(--color-zinc-100)");
-export const text_shadow_zinc_200 = text_shadow_color("var(--color-zinc-200)");
-export const text_shadow_zinc_300 = text_shadow_color("var(--color-zinc-300)");
-export const text_shadow_zinc_400 = text_shadow_color("var(--color-zinc-400)");
-export const text_shadow_zinc_500 = text_shadow_color("var(--color-zinc-500)");
-export const text_shadow_zinc_600 = text_shadow_color("var(--color-zinc-600)");
-export const text_shadow_zinc_700 = text_shadow_color("var(--color-zinc-700)");
-export const text_shadow_zinc_800 = text_shadow_color("var(--color-zinc-800)");
-export const text_shadow_zinc_900 = text_shadow_color("var(--color-zinc-900)");
-export const text_shadow_zinc_950 = text_shadow_color("var(--color-zinc-950)");
-export const text_shadow_neutral_50 = text_shadow_color(
-  "var(--color-neutral-50)",
-);
-export const text_shadow_neutral_100 = text_shadow_color(
-  "var(--color-neutral-100)",
-);
-export const text_shadow_neutral_200 = text_shadow_color(
-  "var(--color-neutral-200)",
-);
-export const text_shadow_neutral_300 = text_shadow_color(
-  "var(--color-neutral-300)",
-);
-export const text_shadow_neutral_400 = text_shadow_color(
-  "var(--color-neutral-400)",
-);
-export const text_shadow_neutral_500 = text_shadow_color(
-  "var(--color-neutral-500)",
-);
-export const text_shadow_neutral_600 = text_shadow_color(
-  "var(--color-neutral-600)",
-);
-export const text_shadow_neutral_700 = text_shadow_color(
-  "var(--color-neutral-700)",
-);
-export const text_shadow_neutral_800 = text_shadow_color(
-  "var(--color-neutral-800)",
-);
-export const text_shadow_neutral_900 = text_shadow_color(
-  "var(--color-neutral-900)",
-);
-export const text_shadow_neutral_950 = text_shadow_color(
-  "var(--color-neutral-950)",
-);
-export const text_shadow_stone_50 = text_shadow_color("var(--color-stone-50)");
-export const text_shadow_stone_100 = text_shadow_color(
-  "var(--color-stone-100)",
-);
-export const text_shadow_stone_200 = text_shadow_color(
-  "var(--color-stone-200)",
-);
-export const text_shadow_stone_300 = text_shadow_color(
-  "var(--color-stone-300)",
-);
-export const text_shadow_stone_400 = text_shadow_color(
-  "var(--color-stone-400)",
-);
-export const text_shadow_stone_500 = text_shadow_color(
-  "var(--color-stone-500)",
-);
-export const text_shadow_stone_600 = text_shadow_color(
-  "var(--color-stone-600)",
-);
-export const text_shadow_stone_700 = text_shadow_color(
-  "var(--color-stone-700)",
-);
-export const text_shadow_stone_800 = text_shadow_color(
-  "var(--color-stone-800)",
-);
-export const text_shadow_stone_900 = text_shadow_color(
-  "var(--color-stone-900)",
-);
-export const text_shadow_stone_950 = text_shadow_color(
-  "var(--color-stone-950)",
-);
+export const text_shadow_inherit = text_shadow_color`inherit`;
+export const text_shadow_current = text_shadow_color`currentColor`;
+export const text_shadow_transparent = text_shadow_color`transparent`;
+export const text_shadow_black = text_shadow_color`var(--color-black)`;
+export const text_shadow_white = text_shadow_color`var(--color-white)`;
+export const text_shadow_red_50 = text_shadow_color`var(--color-red-50)`;
+export const text_shadow_red_100 = text_shadow_color`var(--color-red-100)`;
+export const text_shadow_red_200 = text_shadow_color`var(--color-red-200)`;
+export const text_shadow_red_300 = text_shadow_color`var(--color-red-300)`;
+export const text_shadow_red_400 = text_shadow_color`var(--color-red-400)`;
+export const text_shadow_red_500 = text_shadow_color`var(--color-red-500)`;
+export const text_shadow_red_600 = text_shadow_color`var(--color-red-600)`;
+export const text_shadow_red_700 = text_shadow_color`var(--color-red-700)`;
+export const text_shadow_red_800 = text_shadow_color`var(--color-red-800)`;
+export const text_shadow_red_900 = text_shadow_color`var(--color-red-900)`;
+export const text_shadow_red_950 = text_shadow_color`var(--color-red-950)`;
+export const text_shadow_orange_50 = text_shadow_color`var(--color-orange-50)`;
+export const text_shadow_orange_100 = text_shadow_color`var(--color-orange-100)`;
+export const text_shadow_orange_200 = text_shadow_color`var(--color-orange-200)`;
+export const text_shadow_orange_300 = text_shadow_color`var(--color-orange-300)`;
+export const text_shadow_orange_400 = text_shadow_color`var(--color-orange-400)`;
+export const text_shadow_orange_500 = text_shadow_color`var(--color-orange-500)`;
+export const text_shadow_orange_600 = text_shadow_color`var(--color-orange-600)`;
+export const text_shadow_orange_700 = text_shadow_color`var(--color-orange-700)`;
+export const text_shadow_orange_800 = text_shadow_color`var(--color-orange-800)`;
+export const text_shadow_orange_900 = text_shadow_color`var(--color-orange-900)`;
+export const text_shadow_orange_950 = text_shadow_color`var(--color-orange-950)`;
+export const text_shadow_amber_50 = text_shadow_color`var(--color-amber-50)`;
+export const text_shadow_amber_100 = text_shadow_color`var(--color-amber-100)`;
+export const text_shadow_amber_200 = text_shadow_color`var(--color-amber-200)`;
+export const text_shadow_amber_300 = text_shadow_color`var(--color-amber-300)`;
+export const text_shadow_amber_400 = text_shadow_color`var(--color-amber-400)`;
+export const text_shadow_amber_500 = text_shadow_color`var(--color-amber-500)`;
+export const text_shadow_amber_600 = text_shadow_color`var(--color-amber-600)`;
+export const text_shadow_amber_700 = text_shadow_color`var(--color-amber-700)`;
+export const text_shadow_amber_800 = text_shadow_color`var(--color-amber-800)`;
+export const text_shadow_amber_900 = text_shadow_color`var(--color-amber-900)`;
+export const text_shadow_amber_950 = text_shadow_color`var(--color-amber-950)`;
+export const text_shadow_yellow_50 = text_shadow_color`var(--color-yellow-50)`;
+export const text_shadow_yellow_100 = text_shadow_color`var(--color-yellow-100)`;
+export const text_shadow_yellow_200 = text_shadow_color`var(--color-yellow-200)`;
+export const text_shadow_yellow_300 = text_shadow_color`var(--color-yellow-300)`;
+export const text_shadow_yellow_400 = text_shadow_color`var(--color-yellow-400)`;
+export const text_shadow_yellow_500 = text_shadow_color`var(--color-yellow-500)`;
+export const text_shadow_yellow_600 = text_shadow_color`var(--color-yellow-600)`;
+export const text_shadow_yellow_700 = text_shadow_color`var(--color-yellow-700)`;
+export const text_shadow_yellow_800 = text_shadow_color`var(--color-yellow-800)`;
+export const text_shadow_yellow_900 = text_shadow_color`var(--color-yellow-900)`;
+export const text_shadow_yellow_950 = text_shadow_color`var(--color-yellow-950)`;
+export const text_shadow_lime_50 = text_shadow_color`var(--color-lime-50)`;
+export const text_shadow_lime_100 = text_shadow_color`var(--color-lime-100)`;
+export const text_shadow_lime_200 = text_shadow_color`var(--color-lime-200)`;
+export const text_shadow_lime_300 = text_shadow_color`var(--color-lime-300)`;
+export const text_shadow_lime_400 = text_shadow_color`var(--color-lime-400)`;
+export const text_shadow_lime_500 = text_shadow_color`var(--color-lime-500)`;
+export const text_shadow_lime_600 = text_shadow_color`var(--color-lime-600)`;
+export const text_shadow_lime_700 = text_shadow_color`var(--color-lime-700)`;
+export const text_shadow_lime_800 = text_shadow_color`var(--color-lime-800)`;
+export const text_shadow_lime_900 = text_shadow_color`var(--color-lime-900)`;
+export const text_shadow_lime_950 = text_shadow_color`var(--color-lime-950)`;
+export const text_shadow_green_50 = text_shadow_color`var(--color-green-50)`;
+export const text_shadow_green_100 = text_shadow_color`var(--color-green-100)`;
+export const text_shadow_green_200 = text_shadow_color`var(--color-green-200)`;
+export const text_shadow_green_300 = text_shadow_color`var(--color-green-300)`;
+export const text_shadow_green_400 = text_shadow_color`var(--color-green-400)`;
+export const text_shadow_green_500 = text_shadow_color`var(--color-green-500)`;
+export const text_shadow_green_600 = text_shadow_color`var(--color-green-600)`;
+export const text_shadow_green_700 = text_shadow_color`var(--color-green-700)`;
+export const text_shadow_green_800 = text_shadow_color`var(--color-green-800)`;
+export const text_shadow_green_900 = text_shadow_color`var(--color-green-900)`;
+export const text_shadow_green_950 = text_shadow_color`var(--color-green-950)`;
+export const text_shadow_emerald_50 = text_shadow_color`var(--color-emerald-50)`;
+export const text_shadow_emerald_100 = text_shadow_color`var(--color-emerald-100)`;
+export const text_shadow_emerald_200 = text_shadow_color`var(--color-emerald-200)`;
+export const text_shadow_emerald_300 = text_shadow_color`var(--color-emerald-300)`;
+export const text_shadow_emerald_400 = text_shadow_color`var(--color-emerald-400)`;
+export const text_shadow_emerald_500 = text_shadow_color`var(--color-emerald-500)`;
+export const text_shadow_emerald_600 = text_shadow_color`var(--color-emerald-600)`;
+export const text_shadow_emerald_700 = text_shadow_color`var(--color-emerald-700)`;
+export const text_shadow_emerald_800 = text_shadow_color`var(--color-emerald-800)`;
+export const text_shadow_emerald_900 = text_shadow_color`var(--color-emerald-900)`;
+export const text_shadow_emerald_950 = text_shadow_color`var(--color-emerald-950)`;
+export const text_shadow_teal_50 = text_shadow_color`var(--color-teal-50)`;
+export const text_shadow_teal_100 = text_shadow_color`var(--color-teal-100)`;
+export const text_shadow_teal_200 = text_shadow_color`var(--color-teal-200)`;
+export const text_shadow_teal_300 = text_shadow_color`var(--color-teal-300)`;
+export const text_shadow_teal_400 = text_shadow_color`var(--color-teal-400)`;
+export const text_shadow_teal_500 = text_shadow_color`var(--color-teal-500)`;
+export const text_shadow_teal_600 = text_shadow_color`var(--color-teal-600)`;
+export const text_shadow_teal_700 = text_shadow_color`var(--color-teal-700)`;
+export const text_shadow_teal_800 = text_shadow_color`var(--color-teal-800)`;
+export const text_shadow_teal_900 = text_shadow_color`var(--color-teal-900)`;
+export const text_shadow_teal_950 = text_shadow_color`var(--color-teal-950)`;
+export const text_shadow_cyan_50 = text_shadow_color`var(--color-cyan-50)`;
+export const text_shadow_cyan_100 = text_shadow_color`var(--color-cyan-100)`;
+export const text_shadow_cyan_200 = text_shadow_color`var(--color-cyan-200)`;
+export const text_shadow_cyan_300 = text_shadow_color`var(--color-cyan-300)`;
+export const text_shadow_cyan_400 = text_shadow_color`var(--color-cyan-400)`;
+export const text_shadow_cyan_500 = text_shadow_color`var(--color-cyan-500)`;
+export const text_shadow_cyan_600 = text_shadow_color`var(--color-cyan-600)`;
+export const text_shadow_cyan_700 = text_shadow_color`var(--color-cyan-700)`;
+export const text_shadow_cyan_800 = text_shadow_color`var(--color-cyan-800)`;
+export const text_shadow_cyan_900 = text_shadow_color`var(--color-cyan-900)`;
+export const text_shadow_cyan_950 = text_shadow_color`var(--color-cyan-950)`;
+export const text_shadow_sky_50 = text_shadow_color`var(--color-sky-50)`;
+export const text_shadow_sky_100 = text_shadow_color`var(--color-sky-100)`;
+export const text_shadow_sky_200 = text_shadow_color`var(--color-sky-200)`;
+export const text_shadow_sky_300 = text_shadow_color`var(--color-sky-300)`;
+export const text_shadow_sky_400 = text_shadow_color`var(--color-sky-400)`;
+export const text_shadow_sky_500 = text_shadow_color`var(--color-sky-500)`;
+export const text_shadow_sky_600 = text_shadow_color`var(--color-sky-600)`;
+export const text_shadow_sky_700 = text_shadow_color`var(--color-sky-700)`;
+export const text_shadow_sky_800 = text_shadow_color`var(--color-sky-800)`;
+export const text_shadow_sky_900 = text_shadow_color`var(--color-sky-900)`;
+export const text_shadow_sky_950 = text_shadow_color`var(--color-sky-950)`;
+export const text_shadow_blue_50 = text_shadow_color`var(--color-blue-50)`;
+export const text_shadow_blue_100 = text_shadow_color`var(--color-blue-100)`;
+export const text_shadow_blue_200 = text_shadow_color`var(--color-blue-200)`;
+export const text_shadow_blue_300 = text_shadow_color`var(--color-blue-300)`;
+export const text_shadow_blue_400 = text_shadow_color`var(--color-blue-400)`;
+export const text_shadow_blue_500 = text_shadow_color`var(--color-blue-500)`;
+export const text_shadow_blue_600 = text_shadow_color`var(--color-blue-600)`;
+export const text_shadow_blue_700 = text_shadow_color`var(--color-blue-700)`;
+export const text_shadow_blue_800 = text_shadow_color`var(--color-blue-800)`;
+export const text_shadow_blue_900 = text_shadow_color`var(--color-blue-900)`;
+export const text_shadow_blue_950 = text_shadow_color`var(--color-blue-950)`;
+export const text_shadow_indigo_50 = text_shadow_color`var(--color-indigo-50)`;
+export const text_shadow_indigo_100 = text_shadow_color`var(--color-indigo-100)`;
+export const text_shadow_indigo_200 = text_shadow_color`var(--color-indigo-200)`;
+export const text_shadow_indigo_300 = text_shadow_color`var(--color-indigo-300)`;
+export const text_shadow_indigo_400 = text_shadow_color`var(--color-indigo-400)`;
+export const text_shadow_indigo_500 = text_shadow_color`var(--color-indigo-500)`;
+export const text_shadow_indigo_600 = text_shadow_color`var(--color-indigo-600)`;
+export const text_shadow_indigo_700 = text_shadow_color`var(--color-indigo-700)`;
+export const text_shadow_indigo_800 = text_shadow_color`var(--color-indigo-800)`;
+export const text_shadow_indigo_900 = text_shadow_color`var(--color-indigo-900)`;
+export const text_shadow_indigo_950 = text_shadow_color`var(--color-indigo-950)`;
+export const text_shadow_violet_50 = text_shadow_color`var(--color-violet-50)`;
+export const text_shadow_violet_100 = text_shadow_color`var(--color-violet-100)`;
+export const text_shadow_violet_200 = text_shadow_color`var(--color-violet-200)`;
+export const text_shadow_violet_300 = text_shadow_color`var(--color-violet-300)`;
+export const text_shadow_violet_400 = text_shadow_color`var(--color-violet-400)`;
+export const text_shadow_violet_500 = text_shadow_color`var(--color-violet-500)`;
+export const text_shadow_violet_600 = text_shadow_color`var(--color-violet-600)`;
+export const text_shadow_violet_700 = text_shadow_color`var(--color-violet-700)`;
+export const text_shadow_violet_800 = text_shadow_color`var(--color-violet-800)`;
+export const text_shadow_violet_900 = text_shadow_color`var(--color-violet-900)`;
+export const text_shadow_violet_950 = text_shadow_color`var(--color-violet-950)`;
+export const text_shadow_purple_50 = text_shadow_color`var(--color-purple-50)`;
+export const text_shadow_purple_100 = text_shadow_color`var(--color-purple-100)`;
+export const text_shadow_purple_200 = text_shadow_color`var(--color-purple-200)`;
+export const text_shadow_purple_300 = text_shadow_color`var(--color-purple-300)`;
+export const text_shadow_purple_400 = text_shadow_color`var(--color-purple-400)`;
+export const text_shadow_purple_500 = text_shadow_color`var(--color-purple-500)`;
+export const text_shadow_purple_600 = text_shadow_color`var(--color-purple-600)`;
+export const text_shadow_purple_700 = text_shadow_color`var(--color-purple-700)`;
+export const text_shadow_purple_800 = text_shadow_color`var(--color-purple-800)`;
+export const text_shadow_purple_900 = text_shadow_color`var(--color-purple-900)`;
+export const text_shadow_purple_950 = text_shadow_color`var(--color-purple-950)`;
+export const text_shadow_fuchsia_50 = text_shadow_color`var(--color-fuchsia-50)`;
+export const text_shadow_fuchsia_100 = text_shadow_color`var(--color-fuchsia-100)`;
+export const text_shadow_fuchsia_200 = text_shadow_color`var(--color-fuchsia-200)`;
+export const text_shadow_fuchsia_300 = text_shadow_color`var(--color-fuchsia-300)`;
+export const text_shadow_fuchsia_400 = text_shadow_color`var(--color-fuchsia-400)`;
+export const text_shadow_fuchsia_500 = text_shadow_color`var(--color-fuchsia-500)`;
+export const text_shadow_fuchsia_600 = text_shadow_color`var(--color-fuchsia-600)`;
+export const text_shadow_fuchsia_700 = text_shadow_color`var(--color-fuchsia-700)`;
+export const text_shadow_fuchsia_800 = text_shadow_color`var(--color-fuchsia-800)`;
+export const text_shadow_fuchsia_900 = text_shadow_color`var(--color-fuchsia-900)`;
+export const text_shadow_fuchsia_950 = text_shadow_color`var(--color-fuchsia-950)`;
+export const text_shadow_pink_50 = text_shadow_color`var(--color-pink-50)`;
+export const text_shadow_pink_100 = text_shadow_color`var(--color-pink-100)`;
+export const text_shadow_pink_200 = text_shadow_color`var(--color-pink-200)`;
+export const text_shadow_pink_300 = text_shadow_color`var(--color-pink-300)`;
+export const text_shadow_pink_400 = text_shadow_color`var(--color-pink-400)`;
+export const text_shadow_pink_500 = text_shadow_color`var(--color-pink-500)`;
+export const text_shadow_pink_600 = text_shadow_color`var(--color-pink-600)`;
+export const text_shadow_pink_700 = text_shadow_color`var(--color-pink-700)`;
+export const text_shadow_pink_800 = text_shadow_color`var(--color-pink-800)`;
+export const text_shadow_pink_900 = text_shadow_color`var(--color-pink-900)`;
+export const text_shadow_pink_950 = text_shadow_color`var(--color-pink-950)`;
+export const text_shadow_rose_50 = text_shadow_color`var(--color-rose-50)`;
+export const text_shadow_rose_100 = text_shadow_color`var(--color-rose-100)`;
+export const text_shadow_rose_200 = text_shadow_color`var(--color-rose-200)`;
+export const text_shadow_rose_300 = text_shadow_color`var(--color-rose-300)`;
+export const text_shadow_rose_400 = text_shadow_color`var(--color-rose-400)`;
+export const text_shadow_rose_500 = text_shadow_color`var(--color-rose-500)`;
+export const text_shadow_rose_600 = text_shadow_color`var(--color-rose-600)`;
+export const text_shadow_rose_700 = text_shadow_color`var(--color-rose-700)`;
+export const text_shadow_rose_800 = text_shadow_color`var(--color-rose-800)`;
+export const text_shadow_rose_900 = text_shadow_color`var(--color-rose-900)`;
+export const text_shadow_rose_950 = text_shadow_color`var(--color-rose-950)`;
+export const text_shadow_slate_50 = text_shadow_color`var(--color-slate-50)`;
+export const text_shadow_slate_100 = text_shadow_color`var(--color-slate-100)`;
+export const text_shadow_slate_200 = text_shadow_color`var(--color-slate-200)`;
+export const text_shadow_slate_300 = text_shadow_color`var(--color-slate-300)`;
+export const text_shadow_slate_400 = text_shadow_color`var(--color-slate-400)`;
+export const text_shadow_slate_500 = text_shadow_color`var(--color-slate-500)`;
+export const text_shadow_slate_600 = text_shadow_color`var(--color-slate-600)`;
+export const text_shadow_slate_700 = text_shadow_color`var(--color-slate-700)`;
+export const text_shadow_slate_800 = text_shadow_color`var(--color-slate-800)`;
+export const text_shadow_slate_900 = text_shadow_color`var(--color-slate-900)`;
+export const text_shadow_slate_950 = text_shadow_color`var(--color-slate-950)`;
+export const text_shadow_gray_50 = text_shadow_color`var(--color-gray-50)`;
+export const text_shadow_gray_100 = text_shadow_color`var(--color-gray-100)`;
+export const text_shadow_gray_200 = text_shadow_color`var(--color-gray-200)`;
+export const text_shadow_gray_300 = text_shadow_color`var(--color-gray-300)`;
+export const text_shadow_gray_400 = text_shadow_color`var(--color-gray-400)`;
+export const text_shadow_gray_500 = text_shadow_color`var(--color-gray-500)`;
+export const text_shadow_gray_600 = text_shadow_color`var(--color-gray-600)`;
+export const text_shadow_gray_700 = text_shadow_color`var(--color-gray-700)`;
+export const text_shadow_gray_800 = text_shadow_color`var(--color-gray-800)`;
+export const text_shadow_gray_900 = text_shadow_color`var(--color-gray-900)`;
+export const text_shadow_gray_950 = text_shadow_color`var(--color-gray-950)`;
+export const text_shadow_zinc_50 = text_shadow_color`var(--color-zinc-50)`;
+export const text_shadow_zinc_100 = text_shadow_color`var(--color-zinc-100)`;
+export const text_shadow_zinc_200 = text_shadow_color`var(--color-zinc-200)`;
+export const text_shadow_zinc_300 = text_shadow_color`var(--color-zinc-300)`;
+export const text_shadow_zinc_400 = text_shadow_color`var(--color-zinc-400)`;
+export const text_shadow_zinc_500 = text_shadow_color`var(--color-zinc-500)`;
+export const text_shadow_zinc_600 = text_shadow_color`var(--color-zinc-600)`;
+export const text_shadow_zinc_700 = text_shadow_color`var(--color-zinc-700)`;
+export const text_shadow_zinc_800 = text_shadow_color`var(--color-zinc-800)`;
+export const text_shadow_zinc_900 = text_shadow_color`var(--color-zinc-900)`;
+export const text_shadow_zinc_950 = text_shadow_color`var(--color-zinc-950)`;
+export const text_shadow_neutral_50 = text_shadow_color`var(--color-neutral-50)`;
+export const text_shadow_neutral_100 = text_shadow_color`var(--color-neutral-100)`;
+export const text_shadow_neutral_200 = text_shadow_color`var(--color-neutral-200)`;
+export const text_shadow_neutral_300 = text_shadow_color`var(--color-neutral-300)`;
+export const text_shadow_neutral_400 = text_shadow_color`var(--color-neutral-400)`;
+export const text_shadow_neutral_500 = text_shadow_color`var(--color-neutral-500)`;
+export const text_shadow_neutral_600 = text_shadow_color`var(--color-neutral-600)`;
+export const text_shadow_neutral_700 = text_shadow_color`var(--color-neutral-700)`;
+export const text_shadow_neutral_800 = text_shadow_color`var(--color-neutral-800)`;
+export const text_shadow_neutral_900 = text_shadow_color`var(--color-neutral-900)`;
+export const text_shadow_neutral_950 = text_shadow_color`var(--color-neutral-950)`;
+export const text_shadow_stone_50 = text_shadow_color`var(--color-stone-50)`;
+export const text_shadow_stone_100 = text_shadow_color`var(--color-stone-100)`;
+export const text_shadow_stone_200 = text_shadow_color`var(--color-stone-200)`;
+export const text_shadow_stone_300 = text_shadow_color`var(--color-stone-300)`;
+export const text_shadow_stone_400 = text_shadow_color`var(--color-stone-400)`;
+export const text_shadow_stone_500 = text_shadow_color`var(--color-stone-500)`;
+export const text_shadow_stone_600 = text_shadow_color`var(--color-stone-600)`;
+export const text_shadow_stone_700 = text_shadow_color`var(--color-stone-700)`;
+export const text_shadow_stone_800 = text_shadow_color`var(--color-stone-800)`;
+export const text_shadow_stone_900 = text_shadow_color`var(--color-stone-900)`;
+export const text_shadow_stone_950 = text_shadow_color`var(--color-stone-950)`;

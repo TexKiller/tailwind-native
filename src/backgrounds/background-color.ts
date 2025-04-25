@@ -1,7 +1,7 @@
 import { css } from "css-native";
 
-export const bg = (value: string) => css`
-  background: ${value};
+export const bg = (value: TemplateStringsArray) => css`
+  background: ${value[0]};
 `;
 const backgroundColor = (color: string) => css`
   background-color: ${color};

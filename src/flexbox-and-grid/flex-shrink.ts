@@ -1,5 +1,5 @@
 import { css } from "css-native";
 
-export const shrink = (value?: string) => css`
-  flex-shrink: ${value || 1};
+export const shrink = (value?: TemplateStringsArray) => css`
+  flex-shrink: ${value?.[0] || 1};
 `;

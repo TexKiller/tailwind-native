@@ -11,20 +11,20 @@ const mediaQuery =
     ];
     return consolidated;
   };
-export const min = (constraint: string) =>
-  mediaQuery(`min-width: ${constraint}`);
-export const sm = min("40rem");
-export const md = min("48rem");
-export const lg = min("64rem");
-export const xl = min("80rem");
-export const xxl = min("96rem");
-export const max = (constraint: string) =>
-  mediaQuery(`max-width: ${constraint}`);
-export const max_sm = max("40rem");
-export const max_md = max("48rem");
-export const max_lg = max("64rem");
-export const max_xl = max("80rem");
-export const max_xxl = max("96rem");
+export const min = (constraint: TemplateStringsArray) =>
+  mediaQuery(`min-width: ${constraint[0]}`);
+export const sm = min`40rem`;
+export const md = min`48rem`;
+export const lg = min`64rem`;
+export const xl = min`80rem`;
+export const xxl = min`96rem`;
+export const max = (constraint: TemplateStringsArray) =>
+  mediaQuery(`max-width: ${constraint[0]}`);
+export const max_sm = max`40rem`;
+export const max_md = max`48rem`;
+export const max_lg = max`64rem`;
+export const max_xl = max`80rem`;
+export const max_xxl = max`96rem`;
 export const dark = mediaQuery("prefers-color-scheme: dark");
 export const motion_reduce = mediaQuery("prefers-reduced-motion: reduce");
 export const contrast_more = mediaQuery("prefers-contrast: more");

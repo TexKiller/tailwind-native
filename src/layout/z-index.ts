@@ -1,6 +1,6 @@
 import { css } from "css-native";
 
-export const z = (value: string) => css`
-  z-index: ${value};
+export const z = (value: TemplateStringsArray) => css`
+  z-index: ${value[0]};
 `;
-export const z_auto = z(`auto`);
+export const z_auto = z`auto`;
