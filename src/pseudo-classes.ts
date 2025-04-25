@@ -4,10 +4,13 @@ const pseudoClass =
   (name: string) =>
   (...styles: Parameters<typeof css>) => {
     const consolidated = css(...styles);
-    (consolidated as any)[0] = [
-      `&:${name} {\n` + consolidated[0][0],
-      ...consolidated[0].slice(1, consolidated[0].length - 1),
-      consolidated[0][consolidated[0].length - 1] + "\n}",
+    (consolidated as any) = [
+      [
+        `&:${name} {\n` + consolidated[0][0],
+        ...consolidated[0].slice(1, consolidated[0].length - 1),
+        consolidated[0][consolidated[0].length - 1] + "\n}",
+      ],
+      ...consolidated.slice(1),
     ];
     return consolidated;
   };
