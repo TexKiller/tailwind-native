@@ -93,17 +93,17 @@ export * from "./typography/content";
 
 import { text_size } from "./typography/font-size";
 import { text_height } from "./typography/line-height";
-export const text = (size: string, line_height?: string) =>
-  line_height
-    ? text_height(size, line_height)
-    : /^-?(0|[1-9]\d*)(\.\d*)?$/.test(size)
-      ? text_size(size)
-      : color(size);
+export const text = (size_lineheight: TemplateStringsArray) =>
+  size_lineheight[0].includes(" ")
+    ? text_height(size_lineheight)
+    : /^-?(0|[1-9]\d*)(\.\d*)?$/.test(size_lineheight[0])
+      ? text_size(size_lineheight)
+      : color(size_lineheight);
 
 import { decoration_color } from "./typography/text-decoration-color";
 import { decoration_thickness } from "./typography/text-decoration-thickness";
-export const decoration = (value: string) =>
-  /^-?(0|[1-9]\d*)(\.\d*)?$/.test(value)
+export const decoration = (value: TemplateStringsArray) =>
+  /^-?(0|[1-9]\d*)(\.\d*)?$/.test(value[0])
     ? decoration_thickness(value)
     : decoration_color(value);
 
@@ -129,16 +129,16 @@ export * from "./borders/outline-offset";
 
 import { border_width } from "./borders/border-width";
 import { border_color } from "./borders/border-color";
-export const border = (value?: string) =>
-  /^-?(0|[1-9]\d*)(\.\d*)?$/.test(value || "1")
-    ? border_width(value || "1")
+export const border = (value?: TemplateStringsArray) =>
+  /^-?(0|[1-9]\d*)(\.\d*)?$/.test(value?.[0] || "1")
+    ? border_width([value?.[0] || "1"] as any)
     : border_color(value!);
 
 import { outline_width } from "./borders/outline-width";
 import { outline_color } from "./borders/outline-color";
 import { color } from "./typography/color";
-export const outline = (value: string) =>
-  /^-?(0|[1-9]\d*)(\.\d*)?$/.test(value)
+export const outline = (value: TemplateStringsArray) =>
+  /^-?(0|[1-9]\d*)(\.\d*)?$/.test(value[0])
     ? outline_width(value)
     : outline_color(value);
 
