@@ -6,25 +6,18 @@ const ThemeProvider = React.forwardRef(
   (
     {
       children,
-      style,
+      className,
     }: {
       children: React.ReactNode;
+      className?: string;
       style?: any;
     },
     ref: React.ForwardedRef<View>,
   ) => {
     if (Platform.OS === "web") {
-      style = [
-        ...(style instanceof Array
-          ? (style.length && style) || [{}]
-          : [style || {}]),
-      ];
-      style[0] = {
-        ...style[0],
-        minHeight: style[0].minHeight ?? "100%",
-      };
+      const testID = "min-height: 100%; " + (className || "");
       return (
-        <View style={style} ref={ref}>
+        <View testID={testID} ref={ref}>
           {children}
         </View>
       );
