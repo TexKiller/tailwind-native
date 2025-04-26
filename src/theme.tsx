@@ -15,11 +15,20 @@ const ThemeProvider = React.forwardRef(
     ref: React.ForwardedRef<View>,
   ) => {
     if (Platform.OS === "web") {
-      const testID = "min-height: 100%; " + (className || "");
+      const testID = "tailwind-theme " + (className || "");
       return (
-        <View testID={testID} ref={ref}>
-          {children}
-        </View>
+        <>
+          <style>
+            {`
+              .tailwind-theme {
+                min-height: 100%;
+              }
+            `}
+          </style>
+          <View testID={testID} ref={ref}>
+            {children}
+          </View>
+        </>
       );
     }
     return children;
