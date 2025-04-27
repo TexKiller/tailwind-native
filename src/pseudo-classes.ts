@@ -6,9 +6,13 @@ const pseudoClass =
     const consolidated = css(...styles);
     (consolidated as any) = [
       [
-        `&:${name} {\n` + consolidated[0][0],
+        `&:${name} {\n` +
+          consolidated[0][0] +
+          (consolidated[0].length === 1 ? "\n}" : ""),
         ...consolidated[0].slice(1, consolidated[0].length - 1),
-        consolidated[0][consolidated[0].length - 1] + "\n}",
+        ...(consolidated[0].length > 1
+          ? [consolidated[0][consolidated[0].length - 1] + "\n}"]
+          : []),
       ],
       ...consolidated.slice(1),
     ];
