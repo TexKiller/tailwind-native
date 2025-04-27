@@ -2978,10 +2978,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"color-name@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "color-name@npm:2.0.0"
+  checksum: 10/10a1addae41de2987d6b90dbd3cfade266c2e6f680ce21749911df4493b4fae07654862c6b5358bdd13e155461acb4eedaa5e0ba172bf13542cdcca10866cf2b
+  languageName: node
+  linkType: hard
+
 "color-name@npm:~1.1.4":
   version: 1.1.4
   resolution: "color-name@npm:1.1.4"
   checksum: 10/b0445859521eb4021cd0fb0cc1a75cecf67fceecae89b63f62b201cca8d345baf8b952c966862a9d9a2632987d4f6581f0ec8d957dfacece86f0a7919316f610
+  languageName: node
+  linkType: hard
+
+"color-parse@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "color-parse@npm:2.0.2"
+  dependencies:
+    color-name: "npm:^2.0.0"
+  checksum: 10/64963587057e024edbce3f009e73e69b1d1b31d6f9955eed853748b8cb14d4e3bb49064da9c7452a22f5326a1197fa6c483483a53868e815f4cba30b6b1c36cc
+  languageName: node
+  linkType: hard
+
+"color-space@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "color-space@npm:2.3.1"
+  checksum: 10/574885c366e9ad4fddaed174f8ccd2529346834712c6d86168331527176d3eb997dbeef495756397ee21e52e9cb31ee7e60e8d81f17ece96358f8329dbb7265f
   languageName: node
   linkType: hard
 
@@ -3127,10 +3150,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-native@npm:~1.2.11":
-  version: 1.2.11
-  resolution: "css-native@npm:1.2.11"
+"css-native@npm:~1.3.0":
+  version: 1.3.0
+  resolution: "css-native@npm:1.3.0"
   dependencies:
+    color-parse: "npm:^2.0.2"
+    color-space: "npm:^2.3.1"
     react-native-fast-shadow: "npm:~0.1.1"
     react-native-reanimated: "npm:3.15.1"
     rn-css: "npm:^1.11.6"
@@ -3139,7 +3164,7 @@ __metadata:
     "@babel/core": ^7.0.0-0
     react: "*"
     react-native: "*"
-  checksum: 10/0060729b8f85e7a74593615a407b05ac9f95bc9b1bca3d7a4113825655d3810eb99fbbd2da8f84c0202a04ea5299df48335af843dd2e2635983a6232f134dd52
+  checksum: 10/659c0ce5f0c553fce8c5a6352006a199e9e6fcc274850aa88064ce6cc761f5907ed6d7f28ecca2f936c2eddf2073629eec40c023371a3ea754a90ee32b8b6a97
   languageName: node
   linkType: hard
 
@@ -9017,7 +9042,7 @@ __metadata:
     "@types/jest": "npm:^29.0.0"
     "@types/react": "npm:*"
     chokidar: "npm:^3.5.3"
-    css-native: "npm:~1.2.11"
+    css-native: "npm:~1.3.0"
     dotenv: "npm:^16.4.5"
     eslint: "npm:^8.21.0"
     jest: "npm:29.7.0"
@@ -9031,7 +9056,7 @@ __metadata:
     typescript: "npm:^5.2.2"
     typescript-eslint: "npm:^8.29.1"
   peerDependencies:
-    css-native: ~1.2.11
+    css-native: ~1.3.0
     react: "*"
     react-native: "*"
   languageName: unknown
