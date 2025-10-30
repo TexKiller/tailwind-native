@@ -16,6 +16,10 @@ const ThemeProvider = React.forwardRef(
   ) => {
     if (Platform.OS === "web") {
       const testID = "tailwind-theme " + (className || "");
+      React.useEffect(() => {
+        const classes = document.getElementsByClassName("tailwind-theme")[0].className;
+        document.body.className = classes;
+      }, [className]);
       return (
         <>
           <style>
